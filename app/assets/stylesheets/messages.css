@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 /* 大枠 */
 .wrapper {
   display: flex;
@@ -8,16 +12,42 @@
   height: 100vh;
   background-color: #253141;
 }
-
+/* 左上 */
 .side_header {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.name a {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.create a {
+  border: 1px solid skyblue;
+  font-size: 10px;
+  color: deepskyblue;
+  padding: 14px;
+  display: inline-block;
+}
+
+/* 左下 */
 .room_list {
   height: calc(100vh - 100px);
   background-color: #2F3E51;
-  padding: 0 20px;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.room_list li {
+  margin-bottom: 40px;
+}
+
+.room_list a {
+  color: white;
 }
 
 /* 右枠 */
@@ -25,18 +55,18 @@
   width: calc(100vw - 300px);
   background-color: #fff;
 }
-
+/* 右上 */
 .room_title {
   height: 100px;
   padding: 0 40px;
 }
-
+/* 右中 */
 .chat {
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 46px 40px 0;
 }
-
+/* 右下 */
 .form {
   height: 90px;
   background-color: #ddd;
