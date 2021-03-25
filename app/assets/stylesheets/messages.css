@@ -112,6 +112,7 @@ a {
 /* 右下 */
 .form {
   height: 90px;
+  width: 100%;
   background-color: #ddd;
   padding: 20px 40px;
   display: flex;
@@ -125,7 +126,7 @@ a {
   display: flex;
 }
 
-.form_left input {
+.form_message {
   height: 50px;
   width: 100%;
   border: none;
