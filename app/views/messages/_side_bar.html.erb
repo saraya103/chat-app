@@ -9,7 +9,7 @@
 <div class="room_list">
   <ul>
   <% Room.all.each do |room| %>
-    <li><a href="#"><%= room.name %></a></li>
+    <li><%= link_to room.name, room_messages_path(room) %></li>
   <% end %>
   </ul>
 </div>
