@@ -89,10 +89,13 @@ a {
   overflow: scroll;
 }
 
-.message_set {
-  display: flex;
+.message {
   padding-top: 10px;
   margin-bottom: 40px;
+}
+
+.message_set {
+  display: flex;
 }
 
 .message_name {

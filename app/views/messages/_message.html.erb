@@ -1,3 +1,4 @@
+<div class="message">
   <div class="message_set">
     <div class="message_name">
       <%= message.user.name %>
@@ -9,3 +10,5 @@
       <%= l message.created_at %>
     </div>
   </div>
+  <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+</div>
